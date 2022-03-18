@@ -1,17 +1,13 @@
 # Sobre o Projeto:
-Repositorio criado para criar novos metodos para deixar o codigo limpo e reponsivo
+Repositorio criado para criar novos de design animado utilizando parallax
 
 
 ### TEMPLATES
 
 ```
-1º - Profile
-2º - Tasks
-3º - Timeline
-4º - Daily Notes
-5º - Analytics
-6º - BPMN
-7º - Laboratory
+1º - Chuva de Estrelas
+2º - Lua e Nuvens
+3º - Montanhas e Lua
 ```
 
 
