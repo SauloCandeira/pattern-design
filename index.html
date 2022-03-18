@@ -1,0 +1,141 @@
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE-->
+    <link rel="stylesheet" type="text/css" href="./static/styles/timeline.css">
+    <link rel="stylesheet" href="static/styles/style.css" type="text/css">
+
+</head>
+<body onload="drawVisualization();">
+
+    <!-- MAIN CONTAINER -->
+    <div class="menu-lateral">
+        <!-- LATERAL-->
+        <div class="lateral">
+
+            <!-- LOGO-->
+            <div class="perfil">
+                <a href="#">
+                    <img src="./static/images/SauloCandeira.jpg" alt='foto-perfil' class='sombra' >
+                </a>
+            </div>
+
+            <!-- MINI-MENU HAMBURGUER-->
+            <div class="mini-menu-button">
+                <span></span>
+            </div>
+
+            <!--Itens navegação-->
+            <ul class="itens-menu">  
+                <li><a href="#home" class="active"><i class="fa fa-user"></i> Tasks </a></li>
+                <li><a href="#servicos"><i class="fa fa-list"></i> Timeline </a></li>
+                <li><a href="#artigos"><i class="fa fa-book"></i> Team </a></li>
+                <li><a href="#eventos"><i class="fa fa-star"></i> Daily Notes </a></li>
+                <li><a href="#contato"><i class="fa fa-comments"></i> Analitycs </a></li>
+                <li><a href="#testes"><i class="fa fa-comments"></i> BPMN </a></li>
+                <li><a href="#laboratory"><i class="fa fa-comments"></i> Laboratory </a></li>
+                <li>
+                  <div class="btn">
+                    <a href="https://saulocandeira.github.io/my-projects/">Voltar</a>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- CONTEUDO  MEIO DAS PÁGINAS-->
+        <div class="main-content">
+
+
+
+            <!-- INICIO IFRAME -->
+            <section class="home section active" id="home">
+                <div class="container">
+
+                  <iframe src="templates/profile/index.html" height="1000" width="1000"></iframe> 
+                  <iframe src="templates/profile/index.html" height="1000" width="1000" scrolling="no"></iframe> 
+
+                </div>
+            </section>
+            <!-- FIM IFRAME -->
+            
+
+
+
+
+
+
+            <!-- INICIO SCRIPT-->
+            <section class="service section" id="servicos">
+              <div class="container">        
+
+                <iframe src="templates/timeline/index.html" height="800" width="800" scrolling="no"></iframe> 
+
+              </div>
+            </section>
+            <!-- FIM SCRIPT -->
+
+            <!-- INICIO TIMLINE -->
+            <section class="portfolio section" id="artigos">
+             <div class="container">        
+                
+		
+                <iframe src="templates/kanbam/kanbam.html" height="1000" width="1000" scrolling="no"></iframe> 
+                
+              </div>              
+
+            </section>
+            <!-- FIM TIMLINE-->
+
+            <!-- INICIO DAILY NOTES-->
+              <section class="portfolio section" id="eventos">
+                <div class="container">
+                          
+                  <iframe src="templates/timeline" height="800" width="800" scrolling="no"></iframe> 
+                          
+                </div>
+              </section>
+            <!-- FIM DAILY NOTES-->
+            
+            <!-- LABORATORY-->
+              <section class="portfolio section" id="laboratory">
+                <div class="container">
+                
+               
+		  <iframe src="templates/timelin" height="800" width="800" scrolling="no"></iframe> 
+
+                          
+                </div>
+              </section>
+            <!-- FIM DAILY NOTES-->
+
+            <section class="contact section" id="contato">
+                <div class="container">
+                   
+                  <iframe src="templates/timelin" height="800" width="800" scrolling="no"></iframe> 
+                   
+
+                </div>
+            </section>
+            <!--FIM ANALYTICS-->
+
+
+            <!-- INICIO BPMN-->
+            <section class="service section" id="testes">
+              <div class="container">        
+                <iframe src="templates/timeline" height="800" width="800" scrolling="no"></iframe> 
+                
+                <!-- </div> -->             
+              </div>
+            </section>
+            <!-- FIM TIMLINE-->
+
+        </div>
+    </div>
+	
+      <!--Add js-->
+     <script src="static/js/scripts.js"></script>
+    
+
+</body>
+</html>
+
