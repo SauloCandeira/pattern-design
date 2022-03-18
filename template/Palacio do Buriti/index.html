@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAUD</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">SOCIAUD</a>
+        <ul>
+            <li><a href="./Admin/Admin.html" class="active">ENTRAR</a></li>
+        </ul>
+    </header>
+    
+    <section>
+        <!-- Parte I-->
+        <img src="imagens/stars.png" id="stars">
+        <img src="imagens/moon.png" id="moon">
+        <img src="imagens/22.png" id="mountains_front">
+        
+        <!-- Parte II-
+        <div class="scene">
+            <img src="imagens/cloud1.png" class="cloud1">
+            <img src="imagens/cloud2.png" class="cloud2">
+            <img src="imagens/cloud3.png" class="cloud3">
+            <img src="imagens/cloud1.png" class="cloud4">
+            <img src="imagens/cloud2.png" class="cloud5">
+        </div>
+        -->
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+
+    </section>
+
+    <div class="scene">
+        <img src="imagens/cloud1.png" class="cloud1">
+        <img src="imagens/cloud2.png" class="cloud2">
+        <img src="imagens/cloud3.png" class="cloud3">
+        <img src="imagens/cloud1.png" class="cloud4">
+        <img src="imagens/cloud2.png" class="cloud5">
+    </div>
+
+    
+    <div class="sec" id="sec">
+
+        <h2> SOBRE A SOCIAUD: </h2>
+        <p>
+            Uma plataforma que une educação a distância e programação open-source para o desenvolvimento da auditoria social no Brasil, <br>
+            criada para o prêmio essencial da CGDF. 
+        </p>
+        <button><i class="fab fa-github"></i><a href='http://github.com/SauloCandeira/projetos-python' id=btn2>Github</i></a></button>
+        <button><i class="fab fa-youtube"></i><a href='http://premioessencial.cg.df.gov.br/' id=btn2>Youtube</i></a></button>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        //let mountains_behind = document.getElementById('mountains_behind'); 
+        //let text = document.getElementById('text');
+        //let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+    
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.30 + 'px';
+            moon.style.top = value * 1.0 + 'px';
+            //mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            //text.style.top = marginRight * 4 + 'px';
+            //text.style.top = marginTop * 1.5 + 'px';
+
+        })
+    </script>
+
+    <script type="text/javascript">
+        function stars(){
+            let count = 500;
+            let scene = document.querySelector('.scene');
+            let i = 0;
+            while(i < count){
+                let star = document.createElement("i");
+                let x = Math.floor(Match.random() * window.innerWidth);
+                let x = Math.floor(Match.random() * window.innerHeight);
+                let duration = Math.random() * 10;
+                let dize = Math.random() *2;
+
+                star.style.left = x+'px';
+                star.style.top = y+'px';
+                star.style.width = 1+sixe+'px';
+                star.style.height = 1+sixe+'px';
+
+                star.style.animationDuration = 5+duration+'s';
+                star.style.animationDelay = duration+'s';
+
+                scene.appendChild(star);
+                i++
+            }
+        }
+        stars();
+    </script>
+
+
+</body>
+</html>
