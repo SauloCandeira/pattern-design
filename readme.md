@@ -8,6 +8,7 @@ Repositorio criado para criar novos de design animado utilizando parallax
 1º - Chuva de Estrelas
 2º - Lua e Nuvens
 3º - Montanhas e Lua
+4º - Palacio do Buriti
 ```
 
 
